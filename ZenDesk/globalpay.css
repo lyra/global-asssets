@@ -24,7 +24,7 @@
 }
 @media (min-width: 768px) {
 :lang(es-419) > c.hero-image-novideo {
-  background-image: url(../Laptop/FAQ-GlobalPay2.svg);
+  background-image: url(https://lyra.github.io/global-asssets/ZenDesk/Laptop/FAQ-GlobalPay2.svg);
 }
 }
 :lang(es-419) > div.hero-tutos {
