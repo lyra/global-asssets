@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* Modifier couleur primaire et secondaire de logos selon la marque*/
+:root {
+  --color-primary: #12499F;
+  --color-primary-light: #1A283C79;
+  --color-secondary: #136CBD/*#3775BA*/;
+  --color-tertiary: white;
+}
+
+
+/***** Affiche en fonction de la langue *****/
+/* Français */
+:lang(fr) > a.hero-image {
+ background-image: url(../Laptop/FAQ-Scellius1.svg);
+}
+:lang(fr) > c.hero-image-novideo {
+ display: none;
+}
+
+/* Anglais */
+:lang(en-150) > a.hero-image {
+  display: none;
+}
+@media (min-width: 768px) {
+:lang(en-150) > c.hero-image-novideo {
+  background-image: url(../Laptop/FAQ-Scellius2.svg);
+}
+}
+:lang(en-150) > div.hero-tutos {
+  display: none;
+}
+:lang(en-150) > a.tutoriels {
+  display: none;
+}
+
+
+/***** Base *****/
+h2 {
+  color: var(--color-primary);
+}
+
+a:visited {
+  /* color: var(--color-primary); */
+}
+
+.button:visited, .pagination-next-link:visited, .pagination-prev-link:visited, .pagination-first-link:visited, .pagination-last-link:visited, .subscriptions-subscribe button:visited, .requests-table-toolbar .organization-subscribe button:visited, .community-follow button:visited, .article-subscribe button:visited, .section-subscribe button:visited, .split-button button:visited {
+  color: var(--color-primary);
+}
+
+c4 {
+  color: var(--color-primary);
+}
+
+/***** Forms *****/
+.user-nav-list .iframe-wrapper > div {
+  color: var(--color-primary-light);
+}
+
+.nav-wrapper-desktop a {
+  color: var(--color-primary);
+}
+
+.nav-wrapper-mobile .menu-list-mobile-items a {
+  color: var(--color-primary);
+}
+
+.user-nav-list .iframe-wrapper iframe, .menu-list-mobile .iframe-wrapper iframe {
+  width: 365px;
+  height: 230px;
+}
+
+/***** Footer *****/
+.footer-language-selector button {
+  color: var(--color-primary);
+}
+
+.hero-button {
+ background-color: var(--color-primary);
+
+}
+.hero-button-cat {
+ box-shadow: 0 1px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.hero-button:hover{
+  box-shadow: 0px 1px 4px 2px var(--color-primary);
+}
+
+.hero-button-cat:hover{
+  box-shadow: 0px 1px 4px 2px var(--color-primary-light);
+}
+
+.blocks-item-link {
+  background-color: var(--color-primary);
+}
+
+/***** Community section in homepage *****/
+.community,
+.activity {
+  background-color: var(--color-primary);
+}
+
+/***** Category pages *****/
+.article-list-link {
+  color: var(--color-primary);
+}
+
+.article-title{
+	background-color: var(--color-primary);
+    color: var(--color-tertiary);
+}
+
+.article-header {
+  background-color: var(--color-primary);
+}
+
+.meta-group * {
+  color: var(--color-tertiary);
+}
+
+.section-tree-title {
+  background: var(--color-primary);
+}
+
+.page-header {
+background-color: var(--color-primary);
+}
+
+/* Modifs couleurs */	
+a {
+  color: var(--color-primary);
+}
+.button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .subscriptions-subscribe button:hover, .requests-table-toolbar .organization-subscribe button:hover, .community-follow button:hover, .article-subscribe button:hover, .section-subscribe button:hover, .split-button button:hover, .button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .subscriptions-subscribe button:active, .requests-table-toolbar .organization-subscribe button:active, .community-follow button:active, .article-subscribe button:active, .section-subscribe button:active, .split-button button:active, .button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .subscriptions-subscribe button:focus, .requests-table-toolbar .organization-subscribe button:focus, .community-follow button:focus, .article-subscribe button:focus, .section-subscribe button:focus, .split-button button:focus, .button.button-primary, .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link, .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected=true], .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected=true], .community-follow button.button-primary, .article-subscribe button.button-primary, .article-subscribe button[data-selected=true], .section-subscribe button.button-primary, .section-subscribe button[data-selected=true], .split-button button.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
+  border: 1px solid var(--color-primary);
+}
+h1 {
+  color: var(--color-primary);
+}
+.collapsible-sidebar {
+  /* background-color: var(--color-tertiary); */
+}
+.collapsible-sidebar-title {
+  color: var(--color-primary);
+}
+.sidenav-item {
+  color: var(--color-primary);
+}
+.button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
+  color: var(--color-primary);
+}
+.image-footer:hover{
+  box-shadow: 0px 1px 4px 2px var(--color-primary-light);
+}
+
+/* Recherche */
+.search-results-sidebar .sidenav-item:hover, .search-results-sidebar .sidenav-item.current {
+  border: 1px 0px solid;
+  border-color: #ddd;
+}
+
+.search-results-list > li:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 3%);
+}	
+
+/* Images */	
+
+.logo img {
+  max-height: 50px;
+}
