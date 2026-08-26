@@ -12,7 +12,7 @@
 /***** Affiche en fonction de la langue *****/
 /* Français */
 :lang(fr) > a.hero-image {
- background-image: url(https://lyra.github.io/global-asssets/ZenDesk/Laptop/FAQ-GlobalPay1.svg);
+ background-image: url("https://lyra.github.io/global-asssets/ZenDesk/Laptop/FAQ-GlobalPay1.svg");
 }
 :lang(fr) > c.hero-image-novideo {
  display: none;
@@ -24,7 +24,7 @@
 }
 @media (min-width: 768px) {
 :lang(es-419) > c.hero-image-novideo {
-  background-image: url(https://lyra.github.io/global-asssets/ZenDesk/Laptop/FAQ-GlobalPay2.svg);
+  background-image: url("https://lyra.github.io/global-asssets/ZenDesk/Laptop/FAQ-GlobalPay2.svg");
 }
 }
 :lang(es-419) > div.hero-tutos {
